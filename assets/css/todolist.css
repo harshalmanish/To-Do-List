@@ -1,0 +1,85 @@
+body{
+	background: #00416A;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #E4E5E6, #00416A);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #E4E5E6, #00416A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#container{
+	margin: 100px auto;
+	width: 360px;
+	background-color: #f7f7f7;
+}
+
+h1{
+	background-color: steelblue;
+	margin:0 auto;
+	color: white;
+	font-family: "Avnir";
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 24px;
+	padding:10px 20px;
+}
+
+input{
+	width: 100%;
+	background-color: #f7f7f7;
+	margin: 0;
+	padding: 13px 13px 13px 20px;
+	box-sizing: border-box;
+	transition: all 0.5s;
+	border: 3px solid rgba(0,0,0,0);
+}
+
+.selected{
+	color: grey;
+	text-decoration: line-through;
+}
+
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display:block;
+	cursor: pointer;
+}
+
+li{
+	
+	display: block;
+	background-color: white;
+	height: 40px;
+	line-height: 40px;
+}
+
+li:hover span{
+	width: 40px;
+}
+
+input:focus{
+	border: 3px solid steelblue;
+	outline: none;
+}
+
+li:nth-child(2n){
+	background-color: #f7f7f7; 
+}
+
+.fa-plus{
+	float: right;
+}
+
+span{
+	display:inline-block;
+	width: 0;
+	height:40px;
+	background-color: red;
+	color: white;
+	text-align: center;
+	margin-right: 20px;
+	transition: all 0.5s; 
+}
+
+.textInputDisplay{
+	display: none;
+}
